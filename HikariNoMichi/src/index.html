@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body> 
+
+<body>
     <app-root></app-root>
     <script>
         function scrollToSection(sectionId) {
@@ -22,7 +24,7 @@
         }
 
         // Add smooth scrolling animation on page load
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             document.body.style.opacity = '0';
             document.body.style.transition = 'opacity 0.5s ease-in-out';
             setTimeout(() => {
@@ -31,12 +33,12 @@
         });
 
         // Add scroll animations
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const cards = document.querySelectorAll('.course-card, .info-card');
             cards.forEach(card => {
                 const cardTop = card.getBoundingClientRect().top;
                 const cardVisible = 150;
-                
+
                 if (cardTop < window.innerHeight - cardVisible) {
                     card.style.opacity = '1';
                     card.style.transform = 'translateY(0)';
@@ -45,7 +47,7 @@
         });
 
         // Initialize cards with animation-ready state
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const cards = document.querySelectorAll('.course-card, .info-card');
             cards.forEach(card => {
                 card.style.opacity = '0';
@@ -53,6 +55,36 @@
                 card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             });
         });
+
+        const track = document.getElementById('carouselTrack');
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        function showSlide(index) {
+            // currentSlideIndex = index;
+            // track.style.transform = `translateX(-${index * 100}%)`;
+            
+            // dots.forEach((dot, i) => {
+            //     dot.classList.toggle('active', i === index);
+            // });
+            console.log(track);
+            console.log(dots);
+        }
+
+        function nextSlide() {
+            const nextIndex = (currentSlideIndex + 1) % slides.length;
+            showSlide(nextIndex);
+        }
+
+        function prevSlide() {
+            const prevIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
+            showSlide(prevIndex);
+        }
+
+        function currentSlide(index) {
+            showSlide(index - 1);
+        }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98540c73862edd62',t:'MTc1ODkwMzIwNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
+
 </html>

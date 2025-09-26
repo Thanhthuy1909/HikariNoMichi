@@ -1,8 +1,10 @@
 <!-- Courses Section -->
 <div class="courses-section" id="courses">
+
     <div class="container">
         <h2 class="section-title">Các khóa học có sẵn</h2>
         <p class="section-subtitle">Hãy chọn một khóa học theo trình độ của bạn để phù hợp nhất nhé</p>
+
 
         <div class="courses-grid">
             <div class="course-card">
@@ -98,6 +100,39 @@
         </div>
     </div>
 </div>
+
+
+<!-- Latest Courses Carousel -->
+<div class="carousel-section">
+    <h3 class="section-title" style="font-size: 2rem; margin-bottom: 40px;">最新コース情報</h3>
+    <div class="carousel-container">
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+                <h3>春期集中JLPT N1対策講座</h3>
+                <p>3月開講！短期間でN1合格を目指す集中コースです。経験豊富な講師陣が徹底指導いたします。</p>
+                <button class="carousel-button">詳細を見る</button>
+            </div>
+            <div class="carousel-slide">
+                <h3>オンラインEJU対策コース</h3>
+                <p>自宅で学べるオンライン形式のEJU対策コース。個別指導とグループ学習を組み合わせた効果的な学習法です。</p>
+                <button class="carousel-button">詳細を見る</button>
+            </div>
+            <div class="carousel-slide">
+                <h3>ビジネス日本語実践講座</h3>
+                <p>実際の企業と連携した実践的なビジネス日本語講座。就職活動から実務まで幅広くサポートします。</p>
+                <button class="carousel-button">詳細を見る</button>
+            </div>
+        </div>
+        <button class="carousel-nav carousel-prev" onclick="prevSlide()">‹</button>
+        <button class="carousel-nav carousel-next" onclick="nextSlide()">›</button>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+</div>
+
 
 <!-- Information Section -->
 <div class="info-section" id="info">
