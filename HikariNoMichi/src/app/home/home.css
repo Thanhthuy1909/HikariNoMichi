@@ -1,0 +1,122 @@
+:root {
+    --pink-1: #fff0f4;
+    --pink-2: #ffd9e8;
+    --accent: #7b2f4a;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Inter, system-ui, Arial;
+    margin: 0;
+    color: #333
+}
+
+.container {
+    max-width: 1100px;
+    margin: 24px auto;
+    padding: 0 16px
+}
+
+.banner {
+    background: linear-gradient(180deg, var(--pink-1), var(--pink-2));
+    padding: 36px 0 48px;
+    box-shadow: 0 8px 30px rgba(123, 47, 74, 0.12);
+}
+
+.banner-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    display: flex;
+    gap: 20px;
+    align-items: center
+}
+
+.logo-wrap {
+    flex: 0 0 120px;
+    transform: translateY(-8px)
+}
+
+.banner-copy h1 {
+    margin: 0;
+    font-size: 28px;
+    color: var(--accent)
+}
+
+.banner-copy .lead {
+    margin: 6px 0 12px;
+    color: #6b3750
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 14px;
+    background: #7b2f4a;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 6px 18px rgba(123, 47, 74, 0.16)
+}
+
+.section {
+    margin-top: 28px
+}
+
+.section-title {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--accent)
+}
+
+.topics-grid {
+    margin-top: 24px
+}
+
+.topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+.topic-card {
+    flex: 1 1 220px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06)
+}
+
+.topic-card h4 {
+    margin: 0 0 8px;
+    color: var(--accent)
+}
+
+.exams-list ul {
+    list-style: none;
+    padding: 0
+}
+
+.exams-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #eee
+}
+
+.contact p {
+    margin: 6px 0
+}
+
+.site-footer {
+    padding: 14px 16px;
+    text-align: center;
+    color: #7b5766
+}
+
+@media (max-width:768px) {
+    .banner-inner {
+        flex-direction: column;
+        align-items: flex-start
+    }
+}
