@@ -1,0 +1,13 @@
+<div class="carousel-wrap">
+  <button class="nav prev" (click)="scroll(-300)">‹</button>
+  <div class="items" #scroller>
+    <div class="card" *ngFor="let item of items">
+      <div class="thumb">{{ item.title.charAt(0) }}</div>
+      <div class="meta">
+        <h4>{{ item.title }}</h4>
+        <p class="level">{{ item.level }} • {{ item.topic }}</p>
+      </div>
+    </div>
+  </div>
+  <button class="nav next" (click)="scroll(300)">›</button>
+</div>

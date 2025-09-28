@@ -1,187 +1,60 @@
-<!-- Courses Section -->
-<div class="courses-section" id="courses">
-
-    <div class="container">
-        <h2 class="section-title">Các khóa học có sẵn</h2>
-        <p class="section-subtitle">Hãy chọn một khóa học theo trình độ của bạn để phù hợp nhất nhé</p>
-
-
-        <div class="courses-grid">
-            <div class="course-card">
-                <span class="course-level">JLPT N5</span>
-                <h3 class="course-title">Beginner Foundation</h3>
-                <p class="course-description">Perfect for absolute beginners. Learn hiragana, katakana, basic grammar,
-                    and essential vocabulary.</p>
-                <ul class="course-features">
-                    <li>46 Hiragana & Katakana characters</li>
-                    <li>100+ essential kanji</li>
-                    <li>Basic grammar patterns</li>
-                    <li>800+ vocabulary words</li>
-                    <li>Practice tests & exercises</li>
-                </ul>
-                <button class="course-button" onclick="enrollCourse('N5')">Enroll Now - $49</button>
-            </div>
-
-            <div class="course-card">
-                <span class="course-level">JLPT N4</span>
-                <h3 class="course-title">Elementary Progress</h3>
-                <p class="course-description">Build upon your foundation with intermediate grammar and expanded
-                    vocabulary for daily conversations.</p>
-                <ul class="course-features">
-                    <li>300+ kanji characters</li>
-                    <li>Advanced grammar forms</li>
-                    <li>1,500+ vocabulary words</li>
-                    <li>Listening comprehension</li>
-                    <li>Reading practice texts</li>
-                </ul>
-                <button class="course-button" onclick="enrollCourse('N4')">Enroll Now - $69</button>
-            </div>
-
-            <div class="course-card">
-                <span class="course-level">JLPT N3</span>
-                <h3 class="course-title">Intermediate Mastery</h3>
-                <p class="course-description">Achieve conversational fluency with complex grammar structures and
-                    business-level vocabulary.</p>
-                <ul class="course-features">
-                    <li>650+ kanji characters</li>
-                    <li>Complex sentence structures</li>
-                    <li>3,000+ vocabulary words</li>
-                    <li>Business Japanese basics</li>
-                    <li>Cultural context lessons</li>
-                </ul>
-                <button class="course-button" onclick="enrollCourse('N3')">Enroll Now - $89</button>
-            </div>
-
-            <div class="course-card">
-                <span class="course-level">JLPT N2</span>
-                <h3 class="course-title">Advanced Proficiency</h3>
-                <p class="course-description">Master advanced Japanese for academic and professional environments with
-                    nuanced expressions.</p>
-                <ul class="course-features">
-                    <li>1,000+ kanji characters</li>
-                    <li>Advanced grammar patterns</li>
-                    <li>6,000+ vocabulary words</li>
-                    <li>Academic Japanese</li>
-                    <li>News & media comprehension</li>
-                </ul>
-                <button class="course-button" onclick="enrollCourse('N2')">Enroll Now - $109</button>
-            </div>
-
-            <div class="course-card">
-                <span class="course-level">JLPT N1</span>
-                <h3 class="course-title">Expert Level</h3>
-                <p class="course-description">Achieve near-native proficiency with sophisticated vocabulary and complex
-                    literary expressions.</p>
-                <ul class="course-features">
-                    <li>2,000+ kanji characters</li>
-                    <li>Literary expressions</li>
-                    <li>10,000+ vocabulary words</li>
-                    <li>Professional Japanese</li>
-                    <li>Cultural nuances</li>
-                </ul>
-                <button class="course-button" onclick="enrollCourse('N1')">Enroll Now - $129</button>
-            </div>
-
-            <div class="course-card">
-                <span class="course-level">SPECIAL</span>
-                <h3 class="course-title">Complete Bundle</h3>
-                <p class="course-description">Get access to all JLPT levels with lifetime updates and premium support at
-                    a special price.</p>
-                <ul class="course-features">
-                    <li>All N5-N1 courses included</li>
-                    <li>Lifetime access & updates</li>
-                    <li>Priority email support</li>
-                    <li>Exclusive study materials</li>
-                    <li>Progress tracking tools</li>
-                </ul>
-                <button class="course-button" onclick="enrollCourse('Bundle')" style="background: #ff6b6b;">Get Bundle -
-                    $299 (Save $146!)</button>
-            </div>
-        </div>
+<header class="banner">
+  <div class="banner-inner">
+    <div class="logo-wrap">
+      <svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1">
+            <stop offset="0%" stop-color="#ffd9e8" />
+            <stop offset="100%" stop-color="#ffb3d1" />
+          </linearGradient>
+        </defs>
+        <rect rx="20" width="120" height="120" fill="url(#g1)" />
+        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#7b2f4a">JP</text>
+      </svg>
     </div>
-</div>
-
-
-<!-- Latest Courses Carousel -->
-<div class="carousel-section">
-    <h3 class="section-title" style="font-size: 2rem; margin-bottom: 40px;">最新コース情報</h3>
-    <div class="carousel-container">
-        <div class="carousel-track" id="carouselTrack">
-            <div class="carousel-slide">
-                <h3>春期集中JLPT N1対策講座</h3>
-                <p>3月開講！短期間でN1合格を目指す集中コースです。経験豊富な講師陣が徹底指導いたします。</p>
-                <button class="carousel-button">詳細を見る</button>
-            </div>
-            <div class="carousel-slide">
-                <h3>オンラインEJU対策コース</h3>
-                <p>自宅で学べるオンライン形式のEJU対策コース。個別指導とグループ学習を組み合わせた効果的な学習法です。</p>
-                <button class="carousel-button">詳細を見る</button>
-            </div>
-            <div class="carousel-slide">
-                <h3>ビジネス日本語実践講座</h3>
-                <p>実際の企業と連携した実践的なビジネス日本語講座。就職活動から実務まで幅広くサポートします。</p>
-                <button class="carousel-button">詳細を見る</button>
-            </div>
-        </div>
-        <button class="carousel-nav carousel-prev" onclick="prevSlide()">‹</button>
-        <button class="carousel-nav carousel-next" onclick="nextSlide()">›</button>
-        <div class="carousel-dots">
-            <span class="dot active" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
+    <div class="banner-copy">
+      <h1>{{ siteTitle }}</h1>
+      <p class="lead">Learn Japanese • Practice Exams • Track Progress</p>
+      <a class="cta" href="#courses">Start Learning</a>
     </div>
-</div>
+  </div>
+</header>
 
+<main class="container">
+  <section id="courses" class="section">
+    <h2 class="section-title">Latest Courses</h2>
+    <app-course-carousel [items]="latestCourses"></app-course-carousel>
 
-<!-- Information Section -->
-<div class="info-section" id="info">
-    <div class="container">
-        <h2 class="section-title">Tại sao lại chọn "Hikari no michi"</h2>
-        <p class="section-subtitle">Hệ thống học tập vì bạn</p>
-
-        <div class="info-grid">
-            <div class="info-card">
-                <span class="info-icon">📚</span>
-                <h3 class="info-title">Bài giảng đa dạng</h3>
-                <p class="info-text">Our courses cover all aspects of the JLPT exam including vocabulary, grammar,
-                    reading, and listening comprehension with structured learning paths.</p>
-            </div>
-
-            <div class="info-card">
-                <span class="info-icon">🎯</span>
-                <h3 class="info-title">Tiếp cận đề thi nhanh chóng</h3>
-                <p class="info-text">Every lesson is designed specifically for JLPT success with practice tests, mock
-                    exams, and detailed explanations of exam strategies.</p>
-            </div>
-
-            <div class="info-card">
-                <span class="info-icon">👨‍🏫</span>
-                <h3 class="info-title">Các chuyên gia hướng dẫn chuyên nghiệp</h3>
-                <p class="info-text">Learn from certified Japanese language teachers with years of JLPT preparation
-                    experience and proven track records.</p>
-            </div>
-
-            <div class="info-card">
-                <span class="info-icon">📱</span>
-                <h3 class="info-title">Học mọi nơi trên mọi nền tảng</h3>
-                <p class="info-text">Study anywhere, anytime with our mobile-optimized platform. Download lessons for
-                    offline study and track your progress.</p>
-            </div>
-
-            <div class="info-card">
-                <span class="info-icon">🏆</span>
-                <h3 class="info-title">Chứng nhận kết quả online</h3>
-                <p class="info-text">Over 10,000 students have successfully passed their JLPT exams using our
-                    comprehensive preparation materials and methods.</p>
-            </div>
-
-            <div class="info-card">
-                <span class="info-icon">💬</span>
-                <h3 class="info-title">Cộng đồng hỗ trợ trực tuyến</h3>
-                <p class="info-text">Join our active community of learners, participate in study groups, and get help
-                    from fellow students and instructors.</p>
-            </div>
+    <div class="topics-grid">
+      <h3>Courses by Topic</h3>
+      <div class="topics">
+        <div class="topic-card" *ngFor="let topic of (Object.keys(coursesByTopic))">
+          <h4>{{ topic }}</h4>
+          <ul>
+            <li *ngFor="let c of coursesByTopic[topic]">{{ c.title }} <small>— {{ c.level }}</small></li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
+
+    <div class="exams-list">
+      <h3>Latest Exams</h3>
+      <ul>
+        <li *ngFor="let e of latestExams">
+          <strong>{{ e.title }}</strong> — <span>{{ e.date }}</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
+    <p>Phone: <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></p>
+    <p>Address: {{ contact.address }}</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <small>&copy; {{ (new Date()).getFullYear() }} {{ siteTitle }}</small>
+</footer>
