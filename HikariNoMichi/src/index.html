@@ -4,88 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語試験対策センター</title>
 </head>
-
 <body>
     <app-root></app-root>
-    
-    <script>
-        function scrollToSection(sectionId) {
-            document.getElementById(sectionId).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        function enrollCourse(level) {
-            alert(`Thank you for your interest in the JLPT ${level} course! In a real application, this would redirect to the enrollment page. For now, this is a demo interface.`);
-        }
-
-        function showPage(page) {
-            alert(`This would navigate to the ${page} page. This is a demo interface showing the homepage design.`);
-        }
-
-        // Add smooth scrolling animation on page load
-        window.addEventListener('load', function () {
-            document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.5s ease-in-out';
-            setTimeout(() => {
-                document.body.style.opacity = '1';
-            }, 100);
-        });
-
-        // Add scroll animations
-        window.addEventListener('scroll', function () {
-            const cards = document.querySelectorAll('.course-card, .info-card');
-            cards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                const cardVisible = 150;
-
-                if (cardTop < window.innerHeight - cardVisible) {
-                    card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }
-            });
-        });
-
-        // Initialize cards with animation-ready state
-        document.addEventListener('DOMContentLoaded', function () {
-            const cards = document.querySelectorAll('.course-card, .info-card');
-            cards.forEach(card => {
-                card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            });
-        });
-
-        const track = document.getElementById('carouselTrack');
-        let currentSlideIndex = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.dot');
-        function showSlide(index) {
-            // currentSlideIndex = index;
-            // track.style.transform = `translateX(-${index * 100}%)`;
-            
-            // dots.forEach((dot, i) => {
-            //     dot.classList.toggle('active', i === index);
-            // });
-            console.log(track);
-            console.log(dots);
-        }
-
-        function nextSlide() {
-            const nextIndex = (currentSlideIndex + 1) % slides.length;
-            showSlide(nextIndex);
-        }
-
-        function prevSlide() {
-            const prevIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-            showSlide(prevIndex);
-        }
-
-        function currentSlide(index) {
-            showSlide(index - 1);
-        }
-    </script>
 </body>
-
-</html>

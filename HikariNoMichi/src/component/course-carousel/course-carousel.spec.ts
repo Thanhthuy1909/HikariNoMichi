@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+
 import { CourseCarousel } from './course-carousel';
 
 describe('CourseCarousel', () => {

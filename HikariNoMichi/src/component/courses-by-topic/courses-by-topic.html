@@ -1,0 +1,19 @@
+<section class="section" id="topic">
+    <div class="container">
+        <h3 class="subsection-title">Courses by Topic</h3>
+
+        <div class="topics-grid">
+            @for(topic of courseTopics;track topic)
+            {
+            <!-- Courses by Topic -->
+            <div class="topic-card card">
+                <div class="topic-icon">{{topic.icon}}</div>
+                <h4>{{topic.name}}</h4>
+                <p>{{topic.courseCount}} courses</p>
+                <a href="#" class="btn btn-outline">View Courses</a>
+            </div>
+            }
+        </div>
+    </div>
+
+</section>

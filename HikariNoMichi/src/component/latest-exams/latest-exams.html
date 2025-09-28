@@ -1,0 +1,26 @@
+<section class="section" id="latestExam">
+    <div class="container">
+        <!-- Latest Exams -->
+        <h3 class="subsection-title">Upcoming Exams</h3>
+        <div class="exams-grid">
+            @for(exam of upcomingExams;track exam)
+            {
+                <div class="exam-card card">
+                    <div class="exam-date">
+                        <span class="month">{{exam.month}}</span>
+                        <span class="day">{{exam.day}}</span>
+                    </div>
+                    <div class="exam-info">
+                        <h4>{{exam.name}}</h4>
+                        <p>{{exam.description}}</p>
+                        <div class="exam-meta">
+                            <span class="location">📍 {{exam.location}}</span>
+                            <span class="fee">💴 {{exam.fee}}</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Register</a>
+                </div> 
+            }
+        </div>
+    </div>
+</section>
