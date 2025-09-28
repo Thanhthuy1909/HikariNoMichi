@@ -92,22 +92,23 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.9);
+    background:  #f4007a;
     border: none;
     border-radius: 50%;
     width: 48px;
     height: 48px;
     font-size: 24px;
     font-weight: bold;
-    color: #ff69b4;
+    color: white;
     cursor: pointer;
     transition: all 0.3s ease;
     z-index: 10;
 }
 
 .carousel-btn:hover {
-    background: white;
+    background: rgb(3, 15, 251);
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    color:white;
 }
 
 .prev {
