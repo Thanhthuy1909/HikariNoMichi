@@ -1,22 +1,28 @@
 import { Component } from '@angular/core';
 import { Header } from '../component/header/header';
-import { CourseCarousel } from '../component/course-carousel/course-carousel';
-import { CoursesByTopic } from "../component/courses-by-topic/courses-by-topic";
-import { LatestExams } from "../component/latest-exams/latest-exams";
-import { Contactus } from "../component/contactus/contactus";
-import { Footer } from "../component/footer/footer";
+import { LeftContent } from '../component/left-content/left-content';
+import { RightContent } from '../component/right-content/right-content';
+import { MainContent } from '../component/main-content/main-content';
 @Component({
   selector: 'app-root',
-  imports: [Header, CourseCarousel, CoursesByTopic, LatestExams, Contactus, Footer],
+  imports: [Header, LeftContent, RightContent,MainContent],
   template: `
-    <main>
+    <div class="container-fluid">
         <app-header></app-header>
-        <app-course-carousel></app-course-carousel>
-        <app-courses-by-topic></app-courses-by-topic>
-        <app-latest-exams></app-latest-exams>
-        <app-contactus></app-contactus>
-        <app-footer></app-footer>
-    </main>`,
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2" id="left">
+          <app-left-content></app-left-content>
+        </div>
+        <div class="col-8" id="main">
+          <app-main-content></app-main-content>
+        </div>
+        <div class="col-2" id="right">
+          <app-right-content></app-right-content>
+        </div>
+      </div>
+    </div>`,
   styleUrls: ['./app.css']
 })
 export class App {

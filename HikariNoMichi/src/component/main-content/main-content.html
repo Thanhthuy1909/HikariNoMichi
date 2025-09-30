@@ -1,0 +1,49 @@
+<!--Newest Course-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="carousel-container container px-2 py-5" id="newestCourses">
+            <h2 class="pb-2 border-bottom">Newest Course</h2>
+            <div class="carousel-track" [style.transform]="'translateX(' + (-currentSlide * 100) + '%)'">
+                @for(course of latestCourses;track course)
+                {
+                <div class="course-slide">
+                    <div class="course-card card">
+                        <div class="course-image">
+                            <img [src]="course.image" [alt]="course.title">
+                            <div class="course-level">{{course.level}}</div>
+                        </div>
+                        <div class="course-content">
+                            <h3>{{course.title}}</h3>
+                            <p>{{course.description}}</p>
+                            <div class="course-meta">
+                                <span class="duration">{{course.duration}}</span>
+                                <span class="price">{{course.price}}</span>
+                            </div>
+                            <a href="#" class="btn btn-primary">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+                }
+            </div>
+            <button class="carousel-btn prev" (click)="prevSlide()">‹</button>
+            <button class="carousel-btn next" (click)="nextSlide()">›</button>
+        </div>
+    </div>
+
+    <!--Courses by Topic-->
+    <div class="row">
+        <!-- Courses by Topic -->
+        <h3 class="subsection-title">Courses by Topic</h3>
+        <div class="topics-grid">
+            @for (topic of courseTopics; track $index) 
+            {
+                <div class="topic-card card">
+                    <div class="topic-icon">{{topic.icon}}</div>
+                    <h4>{{topic.name}}</h4>
+                    <p>{{topic.courseCount}} courses</p>
+                    <a href="#" class="btn btn-outline">View Courses</a>
+                </div>
+            }
+        </div>
+    </div>
+</div>
