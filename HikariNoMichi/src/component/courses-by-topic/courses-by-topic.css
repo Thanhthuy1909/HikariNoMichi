@@ -35,7 +35,32 @@
     margin-bottom: 20px;
 }
 
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+}
 
+.btn-outline:hover {
+    background: #ff69b4;
+    color: white;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff69b4, #d63384);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #d63384, #b02a5b);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(214, 51, 132, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 48px rgba(255, 105, 180, 0.15);
+}
 
 @media (max-width: 768px) {
 
